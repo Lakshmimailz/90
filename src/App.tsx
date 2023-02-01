@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Tableinfo} from './Tableinfo';
+  
+  const headingStyle: React.CSSProperties ={
+    color:"red",
+    textAlign: "center"
+}
 
-function App() {
+function App() {  
+  <h1 style={headingStyle}></h1>
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div>
+    <h3 style={headingStyle}>Higher Further faster</h3>
+    <h1 style={headingStyle} >CAPTAIN MARVEL</h1>
+    <h3 style={headingStyle}>In Theatres Now</h3>
+    <Tableinfo name='INFORMATION' info='CAPTAIN MARVEL' playthegame='POWERS UNITED' multimedia='MARVEL MEDIA' guestbook='MARVEL BOOK'></Tableinfo>
+  </div>
   );
+  
+
 }
 
 export default App;
